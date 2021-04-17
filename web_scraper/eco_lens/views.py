@@ -1,13 +1,17 @@
 from eco_lens.eco_lens_spider import EcoLensSpider
 from django.http import JsonResponse
 
+
 def scrape_webpage(request):
     start_urls = [
-            'https://daniellaskinner.github.io/',
-            'https://evie-skinner18.github.io/',
-        ]
+        'https://daniellaskinner.github.io/',
+        'https://evie-skinner18.github.io/',
+    ]
     eco_lens_spider = EcoLensSpider(start_urls)
-    eco_lens_spider.start_requests()
-    data = JsonResponse(eco_lens_spider.scrape_response)
+    data = eco_lens_spider.parse(eco_lens_spider.scrape_response)
+    json_data = JsonResponse(data)
 
-    return data
+    return json_data
+
+
+scrape_webpage('hello')
