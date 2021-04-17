@@ -1,5 +1,6 @@
 import scrapy
 
+
 class EcoLensSpider(scrapy.Spider):
     name = 'ecolensspider'
     start_urls = ['https://www.zyte.com/blog/']
