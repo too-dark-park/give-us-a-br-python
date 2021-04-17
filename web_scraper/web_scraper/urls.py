@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from eco_lens.views import test_view
+from eco_lens.views import scrape_webpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', test_view, name='test')
+    path('', scrape_webpage, name='scrape')
 ]
