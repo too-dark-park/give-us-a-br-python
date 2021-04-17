@@ -20,5 +20,5 @@ from eco_lens.views import scrape_webpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', scrape_webpage, name='scrape')
+    path('scrape/', scrape_webpage, name='scrape')
 ]
