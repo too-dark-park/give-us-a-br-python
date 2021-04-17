@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Evie Skinner | Portfolio</title>
+    <!-- BOOTSTRAP 3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- my custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- Arabic font -->
+    <link href="https://fonts.googleapis.com/css?family=Rakkas&amp;subset=arabic" rel="stylesheet">
+    <!-- tab icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/orange_hat.jpg"/>
+    <!-- technology icons -->  
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  </head>
+  <body class="portfolio-body">
+    <main class="portfolio-main">
+    <nav class="navalicious">
+      <a href="#home-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#projects-section">Projects</a>
+    </nav>
+    <section class="home" id="home-section">
+      <header class="evie">
+        <img src="./images/orange_hat.jpg" alt="Photo of Evie in an orange hat" class="main-img">
+      </header>  
+      <div class="container">
+        <div class="page-header hello">
+          <h1>Hello, I'm Evie! <small>My home is Stroud, UK. <a href="https://www.google.co.uk/maps/place/Stroud/@51.7422439,-2.3633308,10z/data=!4m5!3m4!1s0x4871092683730fe9:0x21fe826bce673a49!8m2!3d51.745734!4d-2.217758"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></small></a></h1>
+        </div>
+        <div class="container">
+          <div class="thumbnail description">
+            <h3>I'm a linguist, musician, and software engineer.</h3>
+            <div class="row list">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <p>Human languages:</p>
+                <p>Français</p>
+                <p class="arabic">اللغة العربية</p>
+                <p>Español</p>
+                <p>Italiano</p>
+                <p class="arabic">فارسی</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <p class="list">Coding languages:</p>
+                <div id="technologies">
+                  <div class="col-lg-2 col-md-4 col-sm-8"> 
+                    <p><i class="devicon-html5-plain-wordmark colored"></i></p> 
+                    <p><i class="devicon-css3-plain-wordmark colored"></i></p>
+                    <p><i class="devicon-javascript-plain colored"></i></p>
+                    <p><i class="devicon-csharp-plain colored"></i></p>  
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-8"> 
+                    <p><i class="devicon-postgresql-plain colored"></i></p> 
+                  </div> 
+                </div>
+                <p id="more"><a href="https://www.linkedin.com/in/evie-skinner-0bb389127/">More...</a></p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <p class="list">Instruments:</p>
+                <p>Drums</p>
+                <p>Percussion</p>
+                <p>Beatboxing</p>
+                <p>Keys</p>
+              </div>
+            </div>
+          </div>
+          <!-- END OF THUMBNAIL -->
+        </div>
+      </div> <!-- end of home container -->
+    </section>
+    <section class="about" id="about-section">
+      <div class="container">
+        <div class="page-header hello">
+          <h1>About Me </h1>
+        </div>
+  
+        <div class="container-fluid">
+          <div class="jumbotron description">
+            <h3>Why I Do What I Do...</h3>
+            <div class="row">
+              <p>
+                  I am passionate about connecting with people of other cultures.
+                  There is a common thread running between coding, language and music, 
+                  in that all three of these domains enable human beings to do this!
+              </p>
+            </div>
+          </div>
+          <!-- END OF JUMBOTRON -->
+  
+          <div class="jumbotron description">
+              <h3>How I Got Here...</h3>
+              <div class="row">
+                <p>
+                  In many ways, the study of Modern Languages is the study of how people
+                  and cultures work: therefore, it is not a huge stretch for someone to apply skills
+                  gained from this field to the study of how machines work. In 2018, I dropped
+                  out of my teacher training course at Newcastle University and started teaching
+                  myself to code out of curiosity. This led to me applying for a place at 
+                  the Sparta Global Academy bootcamp, where I was trained to be a test 
+                  automation engineer. I went from never having written a line of code
+                  in my life to getting my first job as a software engineer in six months.
+                </p>
+                <p id="more">
+                  View my STEM role model profile on My Skills My Life 
+                  <a href="https://myskillsmylife.org.uk/my-skills-role-model/1001364">here</a> 
+                </p>
+              </div>
+            </div>
+            <!-- END OF JUMBOTRON -->      
+          </div> <!-- end of container -->
+  
+        <!-- buttons container -->
+        <div class="container">
+            <p class="hello">
+                I love making cool things like this: 
+            </p>
+            <p>
+                <button id = "ugly-button" class="btn btn-lg btn-danger" role="button">UGLIFY</button>
+            </p>
+            <p>
+                <button id = "beautify-button" class="btn btn-lg btn-info" role="button">Back to normal</button>
+            </p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects-section">
+      <div>
+        <div class="page-header hello">
+          <h1>Software Projects</h1>
+        </div>
+        <div class="row repoContainer">
+          <!-- fetched github repos will appear dynamically here -->
+        </div>    
+
+      <div class="container">
+          <div class="page-header hello">
+            <h1>Musical Projects</h1>
+          </div>
+    
+         <!-- START OF MUSIC PROJECT CIRCLES -->
+        <div class="container-fluid marketing projects contact">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-circle" src="./images/ska.jpg" alt="Image of the Mighty John Street Ska Orchestra" width="140" height="140">
+              <h2 class="projects">The Mighty John Street Ska Orchestra</h2>
+              <p>
+                For the past three years I have been playing the drums in TMJSSO: a fourteen-piece band
+                covering the music of The Skatalites and Herbie Hancock. We regularly play national festivals
+                such as WOMAD and Boomtown, as well as smaller regional festivals like Stroud Fringe.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=RBeg2MEWKZY"><i class="fab fa-youtube icon"></i></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/themightyjohnstreetskaorchestra"><i class="fab fa-facebook icon"></i></a>
+              <a href="mailto:neil@sva.org.uk"><i class="far fa-envelope icon"></i></a>
+            </div><!-- /.col-lg-4 -->
+     
+            <div class="col-lg-4">
+              <img class="img-circle" src="./images/marco-bicca-1491605-unsplash.jpg" alt="Photo of a drumkit by Marco Bicca on Unsplash" width="140" height="140">
+              <h2 class="projects">The Dirty Nickers</h2>
+              <p>
+                I briefly played the drums in this four-piece experimental punk band while living in
+                Newcastle. Upon moving away, I remotely recorded drum parts in my home studio to be 
+                included on their debut album.
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.bandmix.co.uk/evie-skinner/"><i class="far fa-play-circle icon"></i></a>
+            </div><!-- /.col-lg-4 -->
+     
+            <div class="col-lg-4">
+              <img class="img-circle" src="./images/drums.jpg" alt="Image of Evie playing the drums" width="140" height="140">
+              <h2 class="projects">Drum Teaching</h2>
+              <p>
+                I have had experience of teaching three students the drumset on a one-to-one basis. I am very
+                keen to share my love of drums and percussion with more people, so don't hesitate to
+                get in touch if you fancy some lessons!
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=2_Gsi3Q-it0"><i class="fab fa-youtube icon"></i></a>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div> <!--END OF CONTAINER-->  
+    </section>
+  </main>
+  <div class="container">
+    <div class="page-header contact">
+      <h1>Get in touch!
+          <a href="https://dev.to/evieskinner18"><i class="fab fa-dev icon"></i></a>
+          <a href="https://www.linkedin.com/in/evie-skinner-0bb389127/"><i class="fab fa-linkedin-in icon"></i></a>
+          <a href="https://github.com/Evie-Skinner18"><i class="fab fa-github icon"></i></a>
+          <a href="https://mentorcruise.com/mentor/EvieSkinner/"><i class="fas fa-graduation-cap"></i></a>
+      </h1>
+    </div>
+  </div>
+<!-- footer container -->
+  <div class="container">
+    <footer class="copyright">
+      <p>
+        Ideas for how any of the above can be improved (including this website)? Feel free to 
+        <a href="https://github.com/Evie-Skinner18/sparta-global-portfolio/issues">submit an issue</a> 
+        on GitHub or get in touch!
+      </p>
+      <p>
+        &copy Evie Skinner 2019
+      </p>
+    </footer>
+  </div>
+  <!-- my scripts.js-->
+    <script src="./js/fetchGitRepos.js"></script>
+    <script src="./js/indexScripts.js"></script>
+    <script src="./js/uglifyScripts.js"></script>
+    <!-- handlebars CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js" defer></script>
+<!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8f6bf385b3.js" crossorigin="anonymous"></script>
+<!--bootstrap js and jquery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
