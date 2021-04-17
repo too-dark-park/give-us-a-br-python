@@ -19,14 +19,15 @@ class EcoLensSpider(scrapy.Spider):
         }
     json_test_data = JsonResponse(test_data)
 
-    # def parse(self, response):
-    #     for title in response.css('.oxy-post-title'):
-    #         yield {'title': title.css('::text').get()}
-
-    #     for next_page in response.css('a.next'):
-    #         yield response.follow(next_page, self.parse)
+    def start_requests(self):
+        
+        for url in self.start_urls:
+            yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-         jsonresponse = JsonResponse(response.text)             
-
-         return jsonresponse
+        # page = response.url.split("/")[-2]
+        # filename = f'quotes-{page}.html'
+        # with open(filename, 'wb') as f:
+        #     f.write(response.body)
+        # self.log(f'Saved file {filename}')
+        return response.body
