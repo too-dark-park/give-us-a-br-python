@@ -2,7 +2,7 @@ import scrapy
 from django.http import JsonResponse
 
 
-class QuotesSpider(scrapy.Spider):
+class EcoLensSpider(scrapy.Spider):
     name = "quotes"
 
     def start_requests(self):
