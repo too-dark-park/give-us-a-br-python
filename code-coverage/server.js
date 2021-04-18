@@ -8,7 +8,7 @@ app.get('/getCssCoverage', function (req, res) {
     if (typeof req.query.url !== 'undefined' && req.query.url)
     {
         (async() => {
-            var t = await cssUtility.cssCoverage(req.query.url).catch(e => { return e; });
+            var t = await cssUtility.cssCoverage(req.query.url).catch(e => { return res.json(e) });
             res.json(t)
         })()
     }
