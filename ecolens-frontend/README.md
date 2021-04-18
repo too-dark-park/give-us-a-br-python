@@ -1,4 +1,4 @@
-# Welcome to Cheese Days! / Bienvenue chez Cheese Days! / !اهلا بتشيس دايس
+# Welcome to EcoLens!
 
 ## A Multilingual Vue 2 Application
 
