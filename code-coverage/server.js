@@ -1,12 +1,16 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
+var cssUtility = require('./css-coverage');
 
 app.get('/getCssCoverage', function (req, res) {
 
     if (typeof req.query.url !== 'undefined' && req.query.url)
     {
-        res.send('url:' + req.query.url);
+        (async() => {
+            var t = await cssUtility.cssCoverage(req.query.url).catch(e => { return "Invalid URL"; });
+            res.json(t)
+        })()
     }
     else
     {
