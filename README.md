@@ -1,5 +1,5 @@
 # EcoLens
-## By Team Give Us a </br>
+## By Team Give Us a < br >
 
 EcoLens is a web app written in Node Vue and TypeScript that will help internet users assess the ecological impact of their favourite websites.
 
