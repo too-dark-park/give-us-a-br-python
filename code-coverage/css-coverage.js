@@ -2,7 +2,12 @@ const puppeteer = require('puppeteer');
 
 module.exports = {
   cssCoverage: async function(url) {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      'args' : [
+        '--no-sandbox',
+        '--disable-setuid-sandbox'
+      ]
+    });
     const page = await browser.newPage();
   
     // Starts to gather coverage information for CSS files
