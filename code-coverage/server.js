@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
+var cors = require('cors')
 var port = process.env.PORT || 8080;
 var cssUtility = require('./css-coverage');
 var jsUtility = require('./js-coverage');
+
+app.use(cors());
 
 app.get('/getCssCoverage', function (req, res) {
 

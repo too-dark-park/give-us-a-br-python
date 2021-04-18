@@ -4,6 +4,7 @@
   "description": "",
   "main": "css-coverage.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "heroku": "^7.52.0",
     "puppeteer": "^8.0.0"
