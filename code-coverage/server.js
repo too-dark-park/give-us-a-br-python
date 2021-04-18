@@ -1,14 +1,17 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
-//var fs = require("fs");
 
 app.get('/getCssCoverage', function (req, res) {
-    res.end("Done!")
-//    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
-//       console.log( data );
-//       res.end( data );
-//    });
+
+    if (typeof req.query.url !== 'undefined' && req.query.url)
+    {
+        res.send('url:' + req.query.url);
+    }
+    else
+    {
+        res.end("Please supply URL")
+    }
 })
 
 var server = app.listen(port, function () {
