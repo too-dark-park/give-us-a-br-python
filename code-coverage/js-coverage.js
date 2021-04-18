@@ -22,13 +22,8 @@ module.exports = {
       page.coverage.stopJSCoverage()
     ]);
   
-
-    
-    utility.calculateUsedBytes('js', jsCoverage)  
-  
     await browser.close();
 
-    //console.log(jsCoverage);
-    return jsCoverage;
+    return utility.calculateUsedBytes('js', jsCoverage);
   }
 }

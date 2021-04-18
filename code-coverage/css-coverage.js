@@ -21,11 +21,13 @@ module.exports = {
     const [cssCoverage] = await Promise.all([
       page.coverage.stopCSSCoverage()
     ]);
-
-    utility.calculateUsedBytes('css', cssCoverage)  
   
     await browser.close();
 
-    return cssCoverage;
+    var data = {};
+    data.summary = utility.calculateUsedBytes('css', cssCoverage);
+    data.detail = cssCoverage;
+
+    return data;
   }
 }
